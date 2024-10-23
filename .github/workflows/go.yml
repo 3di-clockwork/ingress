@@ -1,5 +1,7 @@
 name: Build image with ko
 
+permissions: write:packages
+
 on:
   push:
     branches: [ "main" ]
