@@ -22,7 +22,7 @@ jobs:
       uses: ko-build/setup-ko@v0.6
 
     - name: Build image with ko
-      run: KO_DOCKER_REPO=ghcr.io/3di-clockwork/caddy-ingress-controller:latest ko build ./cmd/caddy
+      run: KO_DOCKER_REPO=ghcr.io/3di-clockwork/caddy-ingress-controller ko build ./cmd/caddy
 
     # - name: Build
     #   run: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ./bin/ingress-controller ./cmd/caddy
