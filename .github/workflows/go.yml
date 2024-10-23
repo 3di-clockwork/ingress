@@ -1,6 +1,7 @@
 name: Build image with ko
 
-permissions: write:packages
+permissions: 
+  packages: write
 
 on:
   push:
